@@ -1,0 +1,15 @@
+/* 
+- Para que o module.cssseja usado sem interferir em outro 
+documento é necessário salvar o arquivo  com .module
+
+- Quando utilizamos css module 
+é preferivel que se use somente classes
+
+*/
+
+ .header{
+    background: #333;
+    height: 80px;
+ }
+
+ 

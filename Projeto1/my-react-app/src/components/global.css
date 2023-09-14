@@ -1,0 +1,49 @@
+
+/* Para estilizacao que deverá ser aplicada em diversos 
+elementos, podemos utilizar o global.css.
+*/
+/* Variável css */
+:root {
+    --white:#ffffff;
+    --gray-100: #e1e1e6;
+    --gray-300: #c4c4cc;
+    --gray-400: #8d8d99;
+    --gray-500: #323238;
+    --gray-700: #29292e;
+    --gray-800: #202024;
+    --gray-900: #121214;
+
+    --green-500:#00875f;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gray-900);
+    color: var(--gray-300);
+/*   -webkit-font-smoothing: antialiased;
+     melhora a qualidade da fonte a deixando mais 
+     unifome.  
+*/
+    -webkit-font-smoothing: antialiased;
+}
+
+/* - Por padrao todos os elementos nao erdam a font do body
+    eles tem sua propria costumizacao de fonte 
+
+   - utilizar rem ajuda a acessibilida do usuarios
+   unidades fixa como pixel nao alterao o valor da fonte pelo usuário. 
+    
+   - 1rem = 16px
+    */
+body, input, textarea, button{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
