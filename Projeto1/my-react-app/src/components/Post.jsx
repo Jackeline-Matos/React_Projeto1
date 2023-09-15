@@ -28,7 +28,7 @@ export function Post(){
                 {/* tag que se refere a data e tempo <time></time>e
                     permite receber o atributo dateTime=""
                  */}
-                <time title="11 de maio publicado às 11:13" dateTime="2023-09-15">Publicado há uma hora</time>
+                <time title="11 de maio publicado às 11:13" dateTime="2023-09-15">Publicado há 1 hora</time>
             </header>
 
             <div className={styles.content}>
@@ -43,6 +43,20 @@ export function Post(){
                  </p>
 
             </div>
+
+            <form className={styles.comentForm}>
+                <strong>Deixe seu comentario</strong>
+
+                <textarea 
+                    placeholder="Deixe seu comentário"
+                
+                />
+
+                <footer>
+                    <button type="submit">Publicar</button>
+                </footer>
+                
+            </form>
         </article>
     </>
 }

@@ -18,6 +18,14 @@ elementos, podemos utilizar o global.css.
 
 }
 
+/* com focus { outline : transparent} 
+"excluimos" a borda branca que envolve o elemento quando o 
+mesmo esta selecionado */
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 2px var(--green-500);
+}
+
 *{
     margin:0;
     padding:0;
