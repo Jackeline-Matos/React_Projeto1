@@ -123,8 +123,8 @@ se existir um post abaixo
 }
 /* 
     focus-within: se houver um foco em qualquer 
-    imput, text-area ou qualquer elemento dentro do coment form aplicar
-    uma estilizacao . 
+    imput, text-area ou qualquer elemento dentro do coment form 
+    deve se aplicar uma estilizacao . 
 
 */
 .comentForm:focus-within footer{
@@ -134,4 +134,8 @@ se existir um post abaixo
 }
 .comentForm button[type=submit]:hover{
     background: var(--green-300);
+}
+
+.commentList{
+    margin-top: 2rem;
 }

@@ -1,15 +1,18 @@
-//para regastar propriedades de outros componentes utilizamos props
-//props({author} {content})
-
 /*        
-export function Post(props){
-        <p>Post</p>
-        <strong>{props.author}</strong>
-        <p>{props.content}</p>
-        
+ - para regastar propriedades de outros componentes utilizamos props
+ - props({author} {content})
+
+        export function Post(props){
+            <>
+            <p>Post</p>
+            <strong>{props.author}</strong>
+            <p>{props.content}</p>
+            </>
+        }
 */
    
         
+import { Comment } from "./Comment"
 import styles from "./Post.module.css"       
 
 export function Post(){
@@ -57,6 +60,9 @@ export function Post(){
                 </footer>
                 
             </form>
+            <div className={styles.commentList}>
+                <Comment/>
+            </div>
         </article>
     </>
 }

@@ -15,7 +15,8 @@ function App() {
           <main>
             <Post 
               author="Jackeline Matos"
-              content="sdkljkdfjlkjdfljlkdsjflkjsdlkfjlskdjflkjsf"  />
+              content="sdkljkdfjlkjdfljlkdsjflkjsdlkfjlskdjflkjsf" 
+            />
             <Post 
               author="Elis Matos"
               content="sdkljkdfjlkjdfljlkdsjflkjsdlkfjlskdjflkjsf"
