@@ -1,18 +1,27 @@
 import {Post} from "./Post"
-import "./style.css" 
 import { Header } from "./components/Header" 
+import { Sidebar } from "./components/Sidebar"
+
+/* Estilos */
+import "./global.css" 
+import styles from "./app.module.css"
 function App() {
 
   return (
     <>
       <Header/>
-      <Post 
-        author="Jackeline Matos"
-        content="sdkljkdfjlkjdfljlkdsjflkjsdlkfjlskdjflkjsf"  />
-      <Post 
-         author="Elis Matos"
-         content="sdkljkdfjlkjdfljlkdsjflkjsdlkfjlskdjflkjsf"
-      />
+        <div className={styles.wrapper}>
+          <Sidebar/>
+          <main>
+            <Post 
+              author="Jackeline Matos"
+              content="sdkljkdfjlkjdfljlkdsjflkjsdlkfjlskdjflkjsf"  />
+            <Post 
+              author="Elis Matos"
+              content="sdkljkdfjlkjdfljlkdsjflkjsdlkfjlskdjflkjsf"
+            />
+          </main>
+        </div>
     </>
   )
 }

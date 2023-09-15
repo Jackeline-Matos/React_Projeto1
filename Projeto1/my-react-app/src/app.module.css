@@ -1,0 +1,17 @@
+.wrapper{
+    max-width: 70rem;
+    /* centraliza o conteudo na tela */
+    margin:2rem auto;
+    padding:0 1rem;
+
+
+    display: grid;
+    grid-template-columns:256px 1fr;
+    /* espacamento entre as colunas */
+    gap: 2rem;
+    /* o padrao do CSS é esticar (stretch) o container para que o conteudo se adeque ao 
+       seu tamanho, colocando Flex-start, o conteudo sempre fica alinhado
+       para o topo  */
+    align-items: flex-start;
+
+}
