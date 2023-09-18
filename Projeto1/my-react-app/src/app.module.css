@@ -16,6 +16,10 @@
 
 }
 
+
+/* Utilizar unidades relativas simplifica o codigo quando precisamos fazer a responsividade 
+para mobile, pois podemos usar a porcentagem no font-size e o TODO conteudo se alinhará 
+automaticamente a pagina, pois o conteudo é relativo ao tamanho da font */
 @media ( max-width: 768px) {
 
     html {
