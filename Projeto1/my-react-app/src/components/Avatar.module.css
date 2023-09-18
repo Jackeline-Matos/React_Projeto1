@@ -1,0 +1,31 @@
+
+    /* box-sizing: initial = permite que quando add medidas no
+    elemento como border, margin, padding etc, ele nao esprema 
+    o conteudo dentro do container, mas inlcua uma valor a mais a ele. */
+
+    /* Outra forma de resolver é adicionanado a funcao calc()
+     ao width e height:
+    EX:  
+    
+    width: calc (3rem + 12px);
+    height: calc (3rem + 12px); 
+    
+    */
+
+.avatar{
+    box-sizing: initial;
+    width:3rem;
+    height: 3rem;
+    border-radius:8px;
+
+}
+
+.avatarwithBorder {
+    box-sizing: initial;
+    width:3rem;
+    height: 3rem;
+    border-radius:8px;
+    border:4px solid var(--gray-800);
+    outline: 2px solid var(--green-500);
+
+}

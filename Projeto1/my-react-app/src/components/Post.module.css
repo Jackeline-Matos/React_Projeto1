@@ -51,14 +51,6 @@ se existir um post abaixo
     gap:1rem;
 }
 
-.author img{
-    box-sizing: initial;
-    width:3rem;
-    height: 3rem;
-    border-radius:8px;
-    border:4px solid var(--gray-800);
-    outline: 2px solid var(--green-500);
-}
 
 .authorInfo {
     display: flex;
@@ -101,7 +93,7 @@ se existir um post abaixo
 }
 
 .comentForm button[type=submit] {
-    padding: 1rem 1.5rem;
+    padding: .6rem .7rem;
     margin-top: 1rem;
     border-radius:8px;
     border:0;
@@ -122,9 +114,10 @@ se existir um post abaixo
 
 }
 /* 
-    focus-within: se houver um foco em qualquer 
+    :focus-within = se houver um foco em qualquer 
     imput, text-area ou qualquer elemento dentro do coment form 
-    deve se aplicar uma estilizacao . 
+    deve se aplicar a estilizacao que foi escondida com visibility:hidden;
+    com visibility:visible; . 
 
 */
 .comentForm:focus-within footer{
