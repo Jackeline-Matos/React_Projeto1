@@ -1,4 +1,4 @@
-/*        
+/*         
  - para regastar propriedades de outros componentes utilizamos props
  - props({author} {content})
 
@@ -9,23 +9,27 @@
             <p>{props.content}</p>
             </>
         }
-*/
-   
+
+ */
         
 import { Avatar } from "./Avatar"
 import { Comment } from "./Comment"
 import styles from "./Post.module.css"       
+//As propriedades podem ser exportadas da seguinte forma
+//export function Post(props){
 
-export function Post(){
+//mas também podemos fazer a desestruturacao com abaixo
+export function Post({author}){
+
  
     return <>
         <article className={styles.post}>
             <header>
-                <div className={styles.author}>
-                    <Avatar src="https://github.com/jackeline-matos.png"/>
+                <div className={author}>
+                    <Avatar src={author.avatarUrl}/>
                     <div className={styles.authorInfo}>
-                        <strong>Jackeline Matos</strong>
-                        <span>Frontend Entwicklerin</span>
+                        <strong>{author.name}</strong>
+                        <span>{author.role}</span>
                     </div>
                 </div>
 
@@ -37,15 +41,7 @@ export function Post(){
 
             <div className={styles.content}>
 
-                <p>Fala galeraa 👋</p> 	
-                <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
-                <p> 👉 <a href=""> jane.design/doctorcare</a></p>
-                <p>
-                 <a href="#">#novoprojeto </a> {" "} 
-                 <a href="#"> #rocketseat </a> {" "}
-                 <a href="#"> #nlw </a> {" "}
-                 </p>
-
+              
             </div>
 
             <form className={styles.comentForm}>
@@ -63,6 +59,7 @@ export function Post(){
             </form>
             <div className={styles.commentList}>
                 <Comment/>
+
             </div>
         </article>
     </>
