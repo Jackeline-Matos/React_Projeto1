@@ -11,13 +11,26 @@
         }
 
  */
+
+//Conceito de de Estado       
+
+
         
 import { Avatar } from "./Avatar"
 import { Comment } from "./Comment"
 import styles from "./Post.module.css"       
+
+
+//Conceito de de Estado
+//Neste caso o array determina a quantidade de comentários que deverá aparecer
+const comments = [
+    1,
+    2,
+    3,
+]
+
 //As propriedades podem ser exportadas da seguinte forma
 //export function Post(props){
-
 //mas também podemos fazer a desestruturacao com abaixo
 export function Post({author}){
 
@@ -58,7 +71,9 @@ export function Post({author}){
                 
             </form>
             <div className={styles.commentList}>
-                <Comment/>
+               {comments.map(comment => {
+                return <Comment />
+               })}
 
             </div>
         </article>
